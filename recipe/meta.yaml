@@ -1,5 +1,5 @@
 {% set name = "ploomber-core" %}
-{% set version = "0.0.4" %}
+{% set version = "0.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ploomber-core-{{ version }}.tar.gz
-  sha256: e3edf774900ae3c4f946bd2dea8fd123a741acf5136614233f15df9cde905c0e
+  sha256: b6c8aae13f379f1c1d3783c404aecdcaba7b956648b2f74f1667744331097c55
 
 build:
   noarch: python
@@ -35,7 +35,7 @@ test:
 about:
   home: https://pypi.org/project/ploomber-core/
   dev_url: https://github.com/ploomber/core
-  summary: Core module shared across Ploomber projects.  
+  summary: Core module shared across Ploomber projects.
   license: Apache-2.0
   license_file:
     - LICENSE
