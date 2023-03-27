@@ -1,11 +1,11 @@
-About ploomber-core
-===================
+About ploomber-core-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ploomber-core-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/ploomber-core/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ploomber-core-feedstock/blob/main/LICENSE.txt)
 
 Summary: Core module shared across Ploomber projects.
 
