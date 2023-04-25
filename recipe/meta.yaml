@@ -1,5 +1,5 @@
 {% set name = "ploomber-core" %}
-{% set version = "0.2.9" %}
+{% set version = "0.2.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ploomber-core-{{ version }}.tar.gz
-  sha256: 8d8a37a9f16d028e27f79b40ec625062967183a84b1116ca74e162f0d5742ce2
+  sha256: 80d1eea1681273e5d108d562a74ce4682d1de9ac4d333c565e02a8ee115336dd
 
 build:
   noarch: python
