@@ -1,13 +1,14 @@
 {% set name = "ploomber-core" %}
-{% set version = "0.2.25" %}
+{% set version = "0.2.26" %}
+{% set python_min = python_min|default("3.8") %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ploomber-core-{{ version }}.tar.gz
-  sha256: f264bb89cbce23e368ce9854ac8e2b13ccc799c2ee3261a0730b49c7f0e9f097
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ploomber-core-{{ version }}.tar.gz
+  sha256: 0779f009f023e84c534f9fb5a3577bee76634db6b782a338350443bece1f707b
 
 build:
   noarch: python
@@ -17,11 +18,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
+    - setuptools
   run:
     - click
     - posthog
-    - python >=3.6
+    - python >={{ python_min }}
     - pyyaml
 
 test:
@@ -31,6 +33,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/ploomber-core/
