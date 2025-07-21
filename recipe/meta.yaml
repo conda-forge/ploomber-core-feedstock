@@ -1,5 +1,5 @@
 {% set name = "ploomber-core" %}
-{% set version = "0.2.26" %}
+{% set version = "0.2.27" %}
 {% set python_min = python_min|default("3.8") %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ploomber-core-{{ version }}.tar.gz
-  sha256: 0779f009f023e84c534f9fb5a3577bee76634db6b782a338350443bece1f707b
+  sha256: d48bc826e382d095eaa776f67c86786f6473bfc8507a1b1b3671d4b48ddce070
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - setuptools
   run:
     - click
-    - posthog
+    - posthog >=3.0
     - python >={{ python_min }}
     - pyyaml
 
